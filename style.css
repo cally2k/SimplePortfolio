@@ -1,0 +1,191 @@
+/* Global */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Navigation */
+
+.egg1 {
+  background-color: green;
+}
+
+.egg {
+  background-color: red;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.navbar-nav {
+  margin-right: 110px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #252525;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #404040;
+}
+
+/* Main */
+
+main {
+  margin-top: 20px;
+}
+
+.main-image {
+  display: block;
+}
+
+main h2,
+main p {
+  margin: 10px 60px 30px 60px;
+}
+
+main h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 44px;
+  color: #404040;
+}
+
+main p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #606060;
+}
+
+/* Services */
+
+.services {
+  margin-top: 100px;
+}
+
+/* Services / Intro */
+
+.services .intro-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 36px;
+  color: #404040;
+
+  margin-bottom: 15px;
+}
+
+.services .intro-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  color: #606060;
+
+  margin-bottom: 50px;
+}
+
+/* Services / Cards */
+
+.services-card-img {
+  filter: invert(1);
+
+  margin-bottom: 20px;
+}
+
+.services-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 22px;
+  color: #404040;
+
+  margin-bottom: 15px;
+}
+
+.services-card-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: #606060;
+}
+
+/* Portfolio */
+
+.portfolio {
+  margin-top: 100px;
+}
+
+/* Portfolio / Intro */
+
+.portfolio .intro-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 36px;
+  color: #404040;
+}
+
+.portfolio .intro-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  color: #606060;
+
+  margin-bottom: 30px;
+}
+
+/* Portfolio / Cards */
+
+.portfolio-card {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+
+  margin-top: 5px;
+}
+
+.portfolio-card-title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #404040;
+}
+
+.portfolio-card-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15px;
+  color: #606060;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 100px;
+}
+
+footer .card-body {
+  background-color: #505050;
+  height: 250px;
+  width: 100%;
+}
+
+footer .card-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 36px;
+  color: #f2f2f2;
+
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer .card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  color: #e0e0e0;
+
+  margin-bottom: 50px;
+}
