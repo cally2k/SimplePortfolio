@@ -5,5 +5,5 @@ To Do:
 replace css with scss,
 rename img files,
 add animations,
-more pages,
+add pages/links,
 folders
