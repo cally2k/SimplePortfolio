@@ -1,9 +1,14 @@
 # SimplePortfolio
-A simple portfolio, design based on skillshare tutorials by Oliur
+A simple portfolio, design based on skillshare tutorial by Oliur.
 
-To Do:
-replace css with scss,
-rename img files,
-add animations,
-add pages/links,
-folders
+-To Do-
+more animations
+
+-Update Log-
+
+19/09/20
++ css -> scss
++ organization
++ updated images, text and links
++ intro animation
+
