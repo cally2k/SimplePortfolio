@@ -1,0 +1,36 @@
+.skills {
+  margin-top: 100px;
+
+  // Skills / Intro
+  .intro-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 36px;
+    color: #404040;
+  
+    margin-bottom: 15px;
+  }
+
+  .intro-body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19px;
+    color: #606060;
+  
+    margin-bottom: 50px;
+  }
+}
+
+// Skills / Cards
+.skills-card-img {
+  margin-bottom: 20px;
+}
+
+.skills-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 22px;
+  color: #404040;
+
+  margin-bottom: 15px;
+}
