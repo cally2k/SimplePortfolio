@@ -1,0 +1,40 @@
+.portfolio {
+  margin-top: 100px;
+
+  // Portfolio / Intro
+  .intro-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 36px;
+    color: #404040;
+  }
+
+  .intro-body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19px;
+    color: #606060;
+  
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-card {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+
+  margin-top: 5px;
+}
+
+.portfolio-card-title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #404040;
+}
+
+.portfolio-card-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15px;
+  color: #606060;
+}
