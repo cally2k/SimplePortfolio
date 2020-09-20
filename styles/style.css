@@ -258,7 +258,17 @@ footer {
 
 footer .card-body {
   background-color: #505050;
-  height: 250px;
+  height: auto;
   width: 100%;
+}
+
+footer .socials a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  color: #4391f1;
 }
 /*# sourceMappingURL=style.css.map */

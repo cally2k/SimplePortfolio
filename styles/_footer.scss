@@ -3,7 +3,20 @@ footer {
 
   .card-body {
     background-color: #505050;
-    height: 250px;
+    height: auto;
     width: 100%;
+  }
+
+  .socials {
+
+    a {
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #4391f1;
+    }
   }
 }
