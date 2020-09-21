@@ -8,6 +8,11 @@ A simple portfolio, design based on skillshare tutorial by Oliur.
 
 -Update Log-
 
+20/09/20
+
+- added favicon
+- minor adjustments/additions
+
 19/09/20
 
 - css -> scss
