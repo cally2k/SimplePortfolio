@@ -4,7 +4,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fade 1.4s linear forwards 3.7s;
+  animation: fade .8s linear forwards 3.7s;
 }
 
 #logo path:nth-child(1) {
@@ -42,7 +42,7 @@
   z-index: 1;
 
   transform: scaleY(1);
-  animation: animate 2.3s ease forwards 5.4s;
+  animation: animate 2.3s ease forwards 4.8s;
 
   div {
     width: 100%;

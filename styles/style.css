@@ -5,8 +5,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: fade 1.4s linear forwards 3.7s;
-          animation: fade 1.4s linear forwards 3.7s;
+  -webkit-animation: fade .8s linear forwards 3.7s;
+          animation: fade .8s linear forwards 3.7s;
 }
 
 #logo path:nth-child(1) {
@@ -60,8 +60,8 @@
   z-index: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-animation: animate 2.3s ease forwards 5.4s;
-          animation: animate 2.3s ease forwards 5.4s;
+  -webkit-animation: animate 2.3s ease forwards 4.8s;
+          animation: animate 2.3s ease forwards 4.8s;
 }
 
 .intro div {
