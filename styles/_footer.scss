@@ -1,18 +1,22 @@
 footer {
-  margin-top: 100px;
-
-  .card-body {
-    background-color: #505050;
-    height: auto;
-    width: 100%;
-  }
+  background-color: #505050;
+  height: auto;
+  width: 100%;
 
   .socials {
+    height: 150px;
+
+    margin: 0 38%;
+
+    display: flex;
+    justify-content: space-evenly;
 
     a {
       color: white;
       font-size: 30px;
       text-decoration: none;
+
+      margin: auto;
     }
 
     a:hover {

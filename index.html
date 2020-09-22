@@ -12,14 +12,6 @@
       content="Front-End Web Developer based in Manchester, UK"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
     <!-- Links CSS sheet -->
     <link rel="stylesheet" href="styles/style.css" />
 
@@ -34,11 +26,13 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Set favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body>
-    <div class="intro">
+    <!-- Intro -->
+    <!-- <div class="intro">
       <div></div>
       <svg
         id="logo"
@@ -58,47 +52,46 @@
           stroke-width="5"
         />
       </svg>
-    </div>
-    <!-- Site Container -->
+    </div> -->
+
+    <!-- Container -->
     <div class="container">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand ml-n3" href="index.html">Callum Rafter</a>
 
-        <button
-          class="navbar-toggler mr-n3"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="buffer20"></div>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active mx-3" href="#">Home</a>
-            <a class="nav-link active mx-3" href="#">Portfolio</a>
-            <a class="nav-link active mx-3" href="#">Contact</a>
-          </div>
+      <!-- Navbar -->
+      <nav>
+        <!-- Navbar / Brand -->
+        <a class="navbar-brand" href="index.html">Callum Rafter</a>
+        <!-- Navbar / Nav -->
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#">Contact</a>
         </div>
+
       </nav>
+
+      <div class="buffer20"></div>
 
       <!-- Main -->
       <main>
-        <div class="row">
-          <div class="col-12 col-lg-6">
+          <!-- Main / Image -->
+          <div class="main-image">
             <img
               src="img/Logo_CR.png"
-              style="width: 540px"
-              class="mx-auto mb-5 mb-lg-3 main-image img-fluid"
               alt="Image showing CR logo"
             />
           </div>
-          <div class="col-12 col-lg-6 text-center text-md-left">
+
+          <!-- Main / Text -->
+          <div class="main-text">
+            <div class="buffer20"></div>
+
             <h2>Front-End Web Developer from England</h2>
+
+            <div class="buffer40"></div>
+
             <p>
               Consistently hard working, constantly seeking improvement and
               striving to further my skills. Currently spending my days
@@ -106,91 +99,93 @@
               workflow and implement new features into what I create - making
               ideas a reality.
             </p>
-            <div class="socials p-3 text-center mt-n4">
+
+            <div class="buffer40"></div>
+
+            <div class="socials">
               <a target="_blank" href="https://github.com/cally2k"
-                ><i class="fab fa-github m-3"></i>
+                ><i class="fab fa-github"></i>
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/callum-rafter-721479141/"
-                ><i class="fab fa-linkedin-in m-3"></i
+                ><i class="fab fa-linkedin-in"></i
               ></a>
               <a target="_blank" href="mailto: callum.rafter@gmail.com"
-                ><i class="far fa-envelope m-3"></i>
+                ><i class="far fa-envelope"></i>
               </a>
               <a target="_blank" href="Resume.pdf"
-                ><i class="far fa-file m-3"></i
+                ><i class="far fa-file"></i
               ></a>
             </div>
           </div>
-        </div>
+
       </main>
+
+      <div class="buffer80"></div>
 
       <!-- Skills -->
       <div class="skills">
+
         <!-- Skills / Intro -->
-        <div class="skillsintro text-center">
+        <div class="skills-intro">
           <h2 class="intro-title">Skills</h2>
           <p class="intro-body">These are some of the areas I am skilled in.</p>
         </div>
 
+        <div class="buffer40"></div>
+
         <!-- Skills / Cards -->
-        <div class="row text-center mx-4">
-          <div class="col-4 col-md-2 mt-2">
+        <div class="skills-cards">
+          <div>
             <img
               src="img/Logo_HTML5.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="HTML5 Logo image"
             />
             <h3 class="skills-card-title">HTML</h3>
           </div>
 
-          <div class="col-4 col-md-2 mt-2">
+          <div>
             <img
               src="img/Logo_CSS3.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="CSS3 Logo image"
             />
             <h3 class="skills-card-title">CSS</h3>
           </div>
 
-          <div class="col-4 col-md-2 mt-2">
+          <div>
             <img
               src="img/Logo_SASS.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="HTML5 Logo image"
             />
             <h3 class="skills-card-title">SCSS</h3>
           </div>
 
-          <div class="col-4 col-md-2 mt-2">
+          <div>
             <img
               src="img/Logo_Bootstrap.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="Bootstrap Logo image"
             />
             <h3 class="skills-card-title">Bootstrap</h3>
           </div>
 
-          <div class="col-4 col-md-2 mt-2">
+          <div>
             <img
               src="img/Logo_Javascipt.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="Javascript Logo image"
             />
             <h3 class="skills-card-title">Javascript</h3>
           </div>
 
-          <div class="col-4 col-md-2 mt-2">
+          <div>
             <img
               src="img/Logo_Git.png"
-              style="width: 50px; height: 50px"
-              class="skills-card-img mx-auto"
+              class="skills-card-img"
               alt="HTML5 Logo image"
             />
             <h3 class="skills-card-title">Git</h3>
@@ -198,92 +193,122 @@
         </div>
       </div>
 
+      <div class="buffer80"></div>
+
       <!-- Portfolio -->
       <div class="portfolio">
+
         <!-- Portfolio / Intro -->
-        <div class="portfoliointro text-center">
+
+        <div class="portfolio-intro">
           <h2 class="intro-title">Portfolio</h2>
           <p class="intro-body">Some pieces of work.</p>
         </div>
 
+        <div class="buffer40"></div>
+
         <!-- Portfolio / Cards -->
 
-        <!-- Row 1 -->
-        <div class="card-deck my-4">
-          <!-- Row 1 / Card 1 -->
-          <div class="card portfolio-card rounded-0" style="width: auto">
-            <img
-              src="img/Portfolio_1.png"
-              class="card-img-top rounded-0"
-              alt="An image of a 3d model replication of a custom designed funko pop figurine"
-            />
-            <div class="card-body">
-              <h5 class="portfolio-card-title">Funko Pop</h5>
-              <p class="portfolio-card-text">3D Model</p>
+          <div class="portfolio-card-deck">
+            <div class="portfolio-card">
+              <img
+                src="img/Portfolio_1.png"
+                class="portfolio-card-img"
+                alt="Image showing a custom Funko Pop 3D Model"
+              />
+              <div class="portfolio-card-text">
+                <h5>Funko Pop</h5>
+                <a target="_blank" href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <p>3D Model</p>
+                <a target="_blank" href="#">
+                  <p>Visit</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <!-- Row 1 / Card 2 -->
-          <div class="card portfolio-card rounded-0" style="width: auto">
-            <img
-              src="img/Portfolio_2.png"
-              class="card-img-top rounded-0"
-              alt="An image of a 3d model replication of an acoustic guitar"
-            />
-            <div class="card-body align-middle">
-              <h5 class="portfolio-card-title">Acoustic Guitar</h5>
-              <p class="portfolio-card-text">3D Model</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Row 2 -->
-        <div class="card-deck">
-          <!-- Row 2 / Card 1-->
-          <div class="card portfolio-card rounded-0" style="width: auto">
-            <img
-              src="img/Portfolio_3.png"
-              class="card-img-top rounded-0"
-              alt="An image of a 3d model replication of a Corvette C7 car"
-            />
-            <div class="card-body align-middle">
-              <h5 class="portfolio-card-title">Corvette C7</h5>
-              <p class="portfolio-card-text">3D Model</p>
+            <div class="portfolio-card">
+              <img
+                src="img/Portfolio_2.png"
+                class="portfolio-card-img"
+                alt="Image showing a Acoustic Guitar 3D Model"
+              />
+              <div class="portfolio-card-text">
+                <h5>Acoustic Guitar</h5>
+                <a target="_blank" href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <p>3D Model</p>
+                <a target="_blank" href="#">
+                  <p>Visit</p>
+                </a>
+              </div>
             </div>
+
+            <div class="portfolio-card">
+              <img
+                src="img/Portfolio_3.png"
+                class="portfolio-card-img"
+                alt="Image showing a Corvette C7 3D Model"
+              />
+              <div class="portfolio-card-text">
+                <h5>Corvette C7</h5>
+                <a target="_blank" href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <p>3D Model</p>
+                <a target="_blank" href="#">
+                  <p>Visit</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img
+                src="img/Portfolio_4.png"
+                class="portfolio-card-img"
+                alt="Image showing a Modern Apartment 3D Model"
+              />
+              <div class="portfolio-card-text">
+                <h5>Modern Apartment</h5>
+                <a target="_blank" href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <p>3D Model</p>
+                <a target="_blank" href="#">
+                  <p>Visit</p>
+                </a>
+              </div>
+            </div>
+
           </div>
-          <!-- Row 2 / Card 2-->
-          <div class="card portfolio-card rounded-0" style="width: auto">
-            <img
-              src="img/Portfolio_4.png"
-              class="card-img-top rounded-0"
-              alt="An image of a modern apartment scene, a compilation of 3d models, textures and lighting"
-            />
-            <div class="card-body align-middle">
-              <h5 class="portfolio-card-title">Modern Apartment</h5>
-              <p class="portfolio-card-text">3D Model</p>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
 
+    <div class="buffer80"></div>
+
     <!-- Footer -->
     <footer>
-      <div class="card text-center">
-        <div class="card-body">
-          <div class="socials p-3 text-center">
+      <div>
+        <div>
+          <div class="socials">
             <a target="_blank" href="https://github.com/cally2k"
-              ><i class="fab fa-github m-3"></i>
+              ><i class="fab fa-github"></i>
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/callum-rafter-721479141/"
-              ><i class="fab fa-linkedin-in m-3"></i
+              ><i class="fab fa-linkedin-in"></i
             ></a>
             <a target="_blank" href="mailto: callum.rafter@gmail.com"
-              ><i class="far fa-envelope m-3"></i>
+              ><i class="far fa-envelope"></i>
             </a>
             <a target="_blank" href="Resume.pdf"
-              ><i class="far fa-file m-3"></i
+              ><i class="far fa-file"></i
             ></a>
           </div>
         </div>
