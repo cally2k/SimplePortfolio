@@ -1,15 +1,13 @@
 footer {
+  margin-top: 15vh;
   background-color: #505050;
   height: auto;
-  width: 100%;
 
   .socials {
-    height: 150px;
-
-    margin: 0 38%;
-
+    height: 15vh;
+    margin: 0 10vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     a {
       color: white;

@@ -1,29 +1,139 @@
 nav {
-  margin-top: 20px;
+  margin-top: 2vh;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #252525;
-}
-
-.navbar-nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  min-height: 8vh;
 
-  margin: 0 20%;
-
-  .nav-link {
-    font-size: 1rem;
+  .nav-brand {
+    font-size: 1.8rem;
     font-weight: 600;
-    color: #404040;
+    color: #252525;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    li {
+      text-align: center;
+      list-style: none;
+    }
+
+    a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #404040;
+    }
+  }
+
+  // Icon
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger {
+    width: 30px;
+    height: 4px;
+    background: rgb(120, 120, 120);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: rgb(120, 120, 120);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger::before {
+    transform: translateY(-10px);
   }
   
+  .burger::after {
+    transform: translateY(10px);
+  }
+
+  // Animation
+  .menu-btn.open .burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .menu-btn.open .burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  
+  .menu-btn.open .burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  
+}
+
+// Mobile
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    height: 5vh;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+
+    li {
+      opacity: 0;
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  to {
+    transform-origin: right;
+    transform: scaleX(1);
+  }
 }
