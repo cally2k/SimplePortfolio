@@ -1,6 +1,5 @@
 nav {
   margin-top: 2vh;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,7 +15,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
 
     li {
       text-align: center;
@@ -27,6 +26,10 @@ nav {
       font-size: 1rem;
       font-weight: 600;
       color: #404040;
+    }
+
+    a:hover {
+      color: #4391f1;
     }
   }
 

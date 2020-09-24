@@ -12,7 +12,7 @@ const navMenu = () => {
         nav.style.animation = "";
         link.style.animation = "";
       } else {
-        nav.style.animation = `slide .5s ease forwards`
+        nav.style.animation = `slide 0.5s ease forwards`
         link.style.animation = `navLinkFade 0.5s ease forwards ${
           index / 7 + 0.2
         }s`;
