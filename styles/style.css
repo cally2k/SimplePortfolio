@@ -529,6 +529,12 @@ footer .socials a:hover {
   .skills .skills-cards h3 {
     font-size: 1.2rem;
   }
+  footer .socials {
+    margin: 0 20%;
+  }
+  footer .socials a {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -619,6 +625,9 @@ footer .socials a:hover {
   body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
     font-size: 1.6rem;
   }
+  body footer .socials {
+    margin: 0 25%;
+  }
   body footer .socials a {
     font-size: 40px;
   }
@@ -686,7 +695,7 @@ footer .socials a:hover {
     margin-top: 12vh;
   }
   body .skills .skills-intro {
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
   }
   body .skills .skills-intro h2 {
     font-size: 1.9rem;
@@ -708,11 +717,8 @@ footer .socials a:hover {
   body .skills .skills-cards h3 {
     font-size: 1.1rem;
   }
-  body .portfolio {
-    margin-top: 12vh;
-  }
   body .portfolio .portfolio-intro {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
   }
   body .portfolio .portfolio-intro h2 {
     font-size: 1.9rem;
@@ -734,7 +740,7 @@ footer .socials a:hover {
     font-size: 0.8rem;
   }
   body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
-    font-size: 30px;
+    font-size: 35px;
   }
   body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
     font-size: 1.2rem;
@@ -746,7 +752,7 @@ footer .socials a:hover {
     margin: 0 35%;
   }
   body footer .socials a {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
@@ -755,10 +761,10 @@ footer .socials a:hover {
     margin: 0 12%;
   }
   body nav .nav-brand {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   body nav .nav-links li a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   body main .main-text {
     margin: 4% 6%;
@@ -775,38 +781,38 @@ footer .socials a:hover {
     font-size: 40px;
   }
   body .skills {
-    margin: 15vh 15% 0 15%;
+    margin: 12vh 8% 0 8%;
   }
   body .skills .skills-intro h2 {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
   body .skills .skills-intro p {
-    font-size: 1.4rem;
-  }
-  body .skills .skills-cards img {
-    width: 65px;
-    height: 65px;
-  }
-  body .skills .skills-cards h3 {
-    font-size: 1.3rem;
-  }
-  body .portfolio .portfolio-intro h2 {
-    font-size: 2.4rem;
-  }
-  body .portfolio .portfolio-intro p {
-    font-size: 1.4rem;
-  }
-  body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
-    font-size: 1.4rem;
-  }
-  body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
     font-size: 1rem;
   }
+  body .skills .skills-cards img {
+    width: 50px;
+    height: 50px;
+  }
+  body .skills .skills-cards h3 {
+    font-size: 1.1rem;
+  }
+  body .portfolio .portfolio-intro h2 {
+    font-size: 1.9rem;
+  }
+  body .portfolio .portfolio-intro p {
+    font-size: 1rem;
+  }
+  body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
+    font-size: 1.1rem;
+  }
+  body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
+    font-size: 0.8rem;
+  }
   body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
-    font-size: 40px;
+    font-size: 35px;
   }
   body .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   body footer .socials a {
     font-size: 40px;
