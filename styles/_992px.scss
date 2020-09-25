@@ -1,0 +1,131 @@
+@media only screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .nav-brand {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      position: relative;
+      transform: scaleX(1);
+      top: 0vh;
+      box-shadow: none;
+      height: auto;
+      li {
+        opacity: 1;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .main-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .main-text {
+      margin: 2% 10%;
+      h2 {
+        font-size: 2.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .socials {
+        a {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .skills {
+    margin-top: 12vh;
+    .skills-intro {
+      margin-bottom: 10vh;
+      h2 {
+        font-size: 1.9rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .skills-cards {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1.6vh;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .portfolio {
+    margin-top: 12vh;
+    .portfolio-intro {
+      margin-bottom: 10vh;
+      h2 {
+        font-size: 1.9rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .portfolio-card-deck {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3.5%;
+      .portfolio-card {
+        .portfolio-card-text {
+          h5 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+          a {
+            font-size: 30px;
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 3vh;
+    .socials {
+      margin: 0 35%;
+
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+}

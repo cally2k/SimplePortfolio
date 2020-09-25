@@ -15,15 +15,21 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    position: absolute;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+    height: 5vh;
+    top: 10vh;
+    background-color: white;
+    transform: scaleX(0);
 
     li {
       text-align: center;
       list-style: none;
+      opacity: 0;
     }
 
     a {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: #404040;
     }
@@ -51,6 +57,7 @@ nav {
     background: rgb(120, 120, 120);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: block;
     transition: all 0.5s ease-in-out;
   }
 
@@ -88,38 +95,6 @@ nav {
   .menu-btn.open .burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
-  
-}
-
-// Mobile
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-links {
-    position: absolute;
-    height: 5vh;
-    top: 10vh;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    transform: scaleX(0);
-
-    li {
-      opacity: 0;
-
-      a {
-        font-size: 1.2rem;
-      }
-    }
-  }
-
-  .burger {
-    display: block;
-  }
-}
 
 @keyframes navLinkFade {
   from{
@@ -128,6 +103,7 @@ nav {
   to {
     opacity: 1;
   }
+}
 }
 
 @keyframes slide {
