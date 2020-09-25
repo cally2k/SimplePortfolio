@@ -1,40 +1,88 @@
 .portfolio {
-  margin-top: 100px;
+  margin-top: 5vh;
+  padding-top: 3vh;
 
-  // Portfolio / Intro
-  .intro-title {
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 36px;
-    color: #404040;
+  .portfolio-intro {
+    display: grid;
+    grid-template-rows: 2;
+    text-align: center;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 40px;
+      color: #404040;
+      margin-bottom: 1vh;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 20px;
+      color: #606060;
+    }
   }
+  .portfolio-card-deck {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
 
-  .intro-body {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 19px;
-    color: #606060;
-  
-    margin-bottom: 30px;
+    .portfolio-card {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      margin-bottom: 5%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .portfolio-card-text {
+        display: grid;
+        grid-template-columns: 85% 15%;
+        grid-template-rows: repeat(2, auto);
+
+        h5 {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 22px;
+          color: #404040;
+          padding: 5px 10px 0px 10px;
+        }
+
+        p {
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 15px;
+          color: #606060;
+          padding: 0px 10px 10px 10px;
+        }
+
+        a {
+          text-align: center;
+
+          color: #404040;
+          font-size: 25px;
+          height: auto;
+          text-decoration: none;
+          padding: 0px 0px 0.5px 0px;
+          justify-content: end;
+          align-items: flex-end;
+
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 15px;
+            color: #606060;
+            padding: 0.5vh 0px 0.5vh 0px;;
+          }
+        }
+
+        a:hover,
+        a p:hover {
+          color: #4391f1;
+        }
+      }
+    }
   }
-}
-
-.portfolio-card {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-
-  margin-top: 5px;
-}
-
-.portfolio-card-title {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 22px;
-  color: #404040;
-}
-
-.portfolio-card-text {
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 15px;
-  color: #606060;
 }

@@ -53,7 +53,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,175 +100,755 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: Inter, sans-serif;
-}
-
 nav {
-  margin-top: 20px;
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
 }
 
-.navbar-nav {
-  margin-right: 110px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #404040;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
+nav .nav-brand {
+  font-size: 1.8rem;
   font-weight: 600;
   color: #252525;
 }
 
-.nav-link {
-  font-size: 0.875rem;
+nav .nav-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  position: absolute;
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+  height: 5vh;
+  top: 10vh;
+  background-color: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+nav .nav-links li {
+  text-align: center;
+  list-style: none;
+  opacity: 0;
+}
+
+nav .nav-links a {
+  font-size: 1.2rem;
   font-weight: 600;
   color: #404040;
+}
+
+nav .nav-links a:hover {
+  color: #4391f1;
+}
+
+nav .menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .burger {
+  width: 30px;
+  height: 4px;
+  background: #787878;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .burger::before,
+nav .burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #787878;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .burger::before {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+nav .burger::after {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+nav .menu-btn.open .burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .menu-btn.open .burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+nav .menu-btn.open .burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 main {
-  margin-top: 20px;
+  margin-top: 2vh;
 }
 
-main h2, main p {
-  margin: 10px 60px 30px 60px;
+main .main-image img {
+  width: 100%;
 }
 
-main h2 {
-  font-size: 2.25rem;
+main .main-text h2,
+main .main-text p {
+  margin: 0 6%;
+}
+
+main .main-text h2 {
+  margin-top: 30px;
+  font-size: 2.7rem;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 48px;
   color: #404040;
 }
 
-main p {
-  font-size: 1rem;
+main .main-text p {
+  margin-top: 20px;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 24px;
   color: #606060;
 }
 
-main .socials {
+main .main-text .socials {
+  margin-top: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
 }
 
-main .socials a {
+main .main-text .socials a {
   color: #404040;
-  font-size: 30px;
+  font-size: 33px;
   height: auto;
   text-decoration: none;
+  margin: 0 5%;
 }
 
-main .socials a:hover {
+main .main-text .socials a:hover {
   color: #4391f1;
 }
 
-.main-image {
-  display: block;
-}
-
 .skills {
-  margin-top: 100px;
+  margin-top: 5vh;
+  padding-top: 3vh;
 }
 
-.skills .intro-title {
-  font-size: 1.875rem;
+.skills .skills-intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  text-align: center;
+}
+
+.skills .skills-intro h2 {
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 40px;
   color: #404040;
-  margin-bottom: 15px;
+  margin-bottom: 1vh;
 }
 
-.skills .intro-body {
-  font-size: 1rem;
+.skills .skills-intro p {
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 20px;
   color: #606060;
-  margin-bottom: 50px;
 }
 
-.skills-card-img {
-  margin-bottom: 20px;
+.skills .skills-cards {
+  margin-top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
 }
 
-.skills-card-title {
-  font-size: 1.125rem;
+.skills .skills-cards img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1vh;
+}
+
+.skills .skills-cards h3 {
+  font-size: 1rem;
   font-weight: 600;
   line-height: 22px;
   color: #404040;
-  margin-bottom: 15px;
+  margin-bottom: 5vh;
 }
 
 .portfolio {
-  margin-top: 100px;
+  margin-top: 5vh;
+  padding-top: 3vh;
 }
 
-.portfolio .intro-title {
-  font-size: 1.875rem;
+.portfolio .portfolio-intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  text-align: center;
+}
+
+.portfolio .portfolio-intro h2 {
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 40px;
   color: #404040;
+  margin-bottom: 1vh;
 }
 
-.portfolio .intro-body {
-  font-size: 1rem;
+.portfolio .portfolio-intro p {
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 20px;
   color: #606060;
-  margin-bottom: 30px;
 }
 
-.portfolio-card {
+.portfolio .portfolio-card-deck {
+  margin-top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  height: auto;
+}
+
+.portfolio .portfolio-card-deck .portfolio-card {
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  margin-top: 5px;
+  margin-bottom: 5%;
 }
 
-.portfolio-card-title {
-  font-size: 1.125rem;
+.portfolio .portfolio-card-deck .portfolio-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85% 15%;
+      grid-template-columns: 85% 15%;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+}
+
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 22px;
   color: #404040;
+  padding: 5px 10px 0px 10px;
 }
 
-.portfolio-card-text {
-  font-size: 0.75rem;
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 15px;
   color: #606060;
+  padding: 0px 10px 10px 10px;
+}
+
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
+  text-align: center;
+  color: #404040;
+  font-size: 25px;
+  height: auto;
+  text-decoration: none;
+  padding: 0px 0px 0.5px 0px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 15px;
+  color: #606060;
+  padding: 0.5vh 0px 0.5vh 0px;
+}
+
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a:hover,
+.portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p:hover {
+  color: #4391f1;
 }
 
 footer {
-  margin-top: 100px;
-}
-
-footer .card-body {
   background-color: #505050;
   height: auto;
-  width: 100%;
+}
+
+footer .socials {
+  height: 10vh;
+  margin: 0 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer .socials a {
   color: white;
   font-size: 30px;
   text-decoration: none;
+  margin: auto;
 }
 
 footer .socials a:hover {
   color: #4391f1;
+}
+
+@media only screen and (min-width: 600px) {
+  main .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main-image img {
+    width: 85%;
+  }
+  main .main-text h2,
+  main .main-text p {
+    margin: 0 8%;
+  }
+  main .main-text p {
+    padding-top: 2vh;
+  }
+  .skills .skills-cards img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 1.4vh;
+  }
+  .skills .skills-cards h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav .nav-brand {
+    font-size: 2.2rem;
+  }
+  nav .nav-links {
+    top: 12vh;
+    height: 6vh;
+  }
+  nav .nav-links a {
+    font-size: 1.4rem;
+  }
+  nav .burger {
+    width: 40px;
+    height: 5.5px;
+  }
+  nav .burger::before,
+  nav .burger::after {
+    content: "";
+    width: 40px;
+    height: 5.5px;
+  }
+  nav .burger::before {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  nav .burger::after {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  main .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main-image img {
+    width: 70%;
+  }
+  main .main-text {
+    margin-top: 3vh;
+  }
+  main .main-text h2,
+  main .main-text p {
+    margin: 0 10%;
+  }
+  main .main-text p {
+    padding-top: 1vh;
+  }
+  main .main-text .socials a {
+    font-size: 45px;
+  }
+  .skills .skills-intro h2 {
+    font-size: 2.4rem;
+  }
+  .skills .skills-intro p {
+    font-size: 1.4rem;
+  }
+  .skills .skills-cards img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.4vh;
+  }
+  .skills .skills-cards h3 {
+    font-size: 1.4rem;
+  }
+  .portfolio .portfolio-intro h2 {
+    font-size: 2.4rem;
+  }
+  .portfolio .portfolio-intro p {
+    font-size: 1.4rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
+    font-size: 1.8rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
+    font-size: 1.2rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
+    font-size: 35px;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
+    font-size: 1.6rem;
+  }
+  footer .socials a {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  nav .nav-brand {
+    font-size: 1.5rem;
+  }
+  nav .nav-links {
+    position: relative;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    top: 0vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+  }
+  nav .nav-links li {
+    opacity: 1;
+  }
+  nav .nav-links li a {
+    font-size: 1rem;
+  }
+  nav .menu-btn {
+    display: none;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  main .main-image img {
+    width: 100%;
+  }
+  main .main-text {
+    margin: 2% 10%;
+  }
+  main .main-text h2 {
+    font-size: 2.25rem;
+  }
+  main .main-text p {
+    font-size: 1rem;
+  }
+  main .main-text .socials a {
+    font-size: 30px;
+  }
+  .skills {
+    margin-top: 12vh;
+  }
+  .skills .skills-intro {
+    margin-bottom: 10vh;
+  }
+  .skills .skills-intro h2 {
+    font-size: 1.9rem;
+  }
+  .skills .skills-intro p {
+    font-size: 1rem;
+  }
+  .skills .skills-cards {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .skills .skills-cards img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.6vh;
+  }
+  .skills .skills-cards h3 {
+    font-size: 1.1rem;
+  }
+  .portfolio {
+    margin-top: 12vh;
+  }
+  .portfolio .portfolio-intro {
+    margin-bottom: 10vh;
+  }
+  .portfolio .portfolio-intro h2 {
+    font-size: 1.9rem;
+  }
+  .portfolio .portfolio-intro p {
+    font-size: 1rem;
+  }
+  .portfolio .portfolio-card-deck {
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3.5%;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
+    font-size: 1.1rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
+    font-size: 0.8rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
+    font-size: 30px;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
+    font-size: 1.2rem;
+  }
+  footer {
+    margin-top: 3vh;
+  }
+  footer .socials {
+    margin: 0 35%;
+  }
+  footer .socials a {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav .nav-brand {
+    font-size: 1.8rem;
+  }
+  nav .nav-links li a {
+    font-size: 1.3rem;
+  }
+  main .main-text {
+    margin: 4% 6%;
+  }
+  main .main-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2vh;
+  }
+  main .main-text p {
+    font-size: 1.2rem;
+    margin-bottom: 6vh;
+  }
+  main .main-text .socials a {
+    font-size: 40px;
+  }
+  .skills {
+    margin: 15vh 15% 0 15%;
+  }
+  .skills .skills-intro h2 {
+    font-size: 2.4rem;
+  }
+  .skills .skills-intro p {
+    font-size: 1.4rem;
+  }
+  .skills .skills-cards img {
+    width: 65px;
+    height: 65px;
+  }
+  .skills .skills-cards h3 {
+    font-size: 1.3rem;
+  }
+  .portfolio .portfolio-intro h2 {
+    font-size: 2.4rem;
+  }
+  .portfolio .portfolio-intro p {
+    font-size: 1.4rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text h5 {
+    font-size: 1.4rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text p {
+    font-size: 1rem;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a {
+    font-size: 40px;
+  }
+  .portfolio .portfolio-card-deck .portfolio-card .portfolio-card-text a p {
+    font-size: 1.5rem;
+  }
+  footer .socials a {
+    font-size: 40px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+}
+
+* .container {
+  margin: 0 6%;
+}
+
+* html {
+  scroll-behavior: smooth;
+}
+
+* .scrollTop {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  color: #404040;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+* .scrollTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

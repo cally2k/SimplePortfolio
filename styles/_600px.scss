@@ -1,0 +1,36 @@
+@media only screen and (min-width: 600px) {
+  main {
+    .main-image {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 85%;
+      }
+    }
+
+    .main-text {
+      h2,
+      p {
+        margin: 0 8%;
+      }
+
+      p {
+        padding-top: 2vh;
+      }
+    }
+  }
+
+  .skills {
+    .skills-cards {
+      img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 1.4vh;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+
+    }
+  }
+}

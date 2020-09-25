@@ -2,20 +2,37 @@
 
 A simple portfolio, design based on skillshare tutorial by Oliur.
 
--To Do-
-
-- more animations
-
 -Update Log-
 
-20/09/20
+v4.3.0
+
+- fully responsive
+- other minor additions
+
+v4.2.0
+
+- scroll to top button
+- other minor additions
+
+v4.1.0
+
+- full mobile support
+- burger menu animation
+
+v4.0.0
+
+- removed bootstrap
+- improved portfolio cards
+
+v3.1.0
 
 - added favicon
-- minor adjustments/additions
+- improved "skills"
+- other minor adjustments/additions
 
-19/09/20
+v3.0.0
 
 - css -> scss
-- organization
+- file organization
 - updated images, text and links
 - intro animation
