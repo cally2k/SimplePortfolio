@@ -1,124 +1,129 @@
 @media only screen and (min-width: 768px) {
-  nav {
-    .nav-brand {
-      font-size: 2.2rem;
+  body {
+    .container {
+      margin: 0 8%;
     }
-
-    .nav-links {
-      top: 12vh;
-      height: 6vh;
-
-      a {
-        font-size: 1.4rem;
+    nav {
+      .nav-brand {
+        font-size: 2.2rem;
       }
-    }
-
-    .burger {
-      width: 40px;
-      height: 5.5px;
-    }
-
-    .burger::before,
-    .burger::after {
-      content: "";
-      width: 40px;
-      height: 5.5px;
-    }
-
-    .burger::before {
-      transform: translateY(-12px);
-    }
-    
-    .burger::after {
-      transform: translateY(12px);
-    }
-  }
-
-  main {
-    .main-image {
-      display: flex;
-      justify-content: center;
-      img {
-        width: 70%;
-      }
-    }
-
-    .main-text {
-      margin-top: 3vh;
-      h2,
-      p {
-        margin: 0 10%;
-      }
-
-      p {
-        padding-top: 1vh;
-      }
-
-      .socials {
+  
+      .nav-links {
+        top: 12vh;
+        height: 6vh;
+  
         a {
-          font-size: 45px;
+          font-size: 1.4rem;
+        }
+      }
+  
+      .burger {
+        width: 40px;
+        height: 5.5px;
+      }
+  
+      .burger::before,
+      .burger::after {
+        content: "";
+        width: 40px;
+        height: 5.5px;
+      }
+  
+      .burger::before {
+        transform: translateY(-12px);
+      }
+      
+      .burger::after {
+        transform: translateY(12px);
+      }
+    }
+  
+    main {
+      .main-image {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 70%;
+        }
+      }
+  
+      .main-text {
+        margin-top: 3vh;
+        h2,
+        p {
+          margin: 0 10%;
+        }
+  
+        p {
+          padding-top: 1vh;
+        }
+  
+        .socials {
+          a {
+            font-size: 45px;
+          }
         }
       }
     }
-  }
-
-  .skills {
-    .skills-intro {
-      h2 {
-        font-size: 2.4rem;
+  
+    .skills {
+      .skills-intro {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
       }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-
-    .skills-cards {
-      img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1.4vh;
-      }
-      h3 {
-        font-size: 1.4rem;
-      }
-
-    }
-  }
-
-  .portfolio {
-    .portfolio-intro {
-      h2 {
-        font-size: 2.4rem;
-      }
-      p {
-        font-size: 1.4rem;
+  
+      .skills-cards {
+        img {
+          width: 70px;
+          height: 70px;
+          margin-bottom: 1.4vh;
+        }
+        h3 {
+          font-size: 1.4rem;
+        }
+  
       }
     }
-
-    .portfolio-card-deck {
-      .portfolio-card {
-        .portfolio-card-text {
-          h5 {
-            font-size: 1.8rem;
-          }
-          p {
-            font-size: 1.2rem;
-          }
-          a {
-            font-size: 35px;
+  
+    .portfolio {
+      .portfolio-intro {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .portfolio-card-deck {
+        .portfolio-card {
+          .portfolio-card-text {
+            h5 {
+              font-size: 1.8rem;
+            }
             p {
-              font-size: 1.6rem;
+              font-size: 1.2rem;
+            }
+            a {
+              font-size: 35px;
+              p {
+                font-size: 1.6rem;
+              }
             }
           }
         }
       }
     }
-  }
-
-  footer {
-    .socials {
-      a {
-        font-size: 40px;
+  
+    footer {
+      .socials {
+        a {
+          font-size: 40px;
+        }
       }
     }
   }

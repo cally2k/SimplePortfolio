@@ -1,91 +1,96 @@
 @media only screen and (min-width: 1200px) {
-  nav {
-    .nav-brand {
-      font-size: 1.8rem;
+  body {
+    .container {
+      margin: 0 12%;
     }
-    .nav-links {
-      li {
-        a {
+    nav {
+      .nav-brand {
+        font-size: 1.8rem;
+      }
+      .nav-links {
+        li {
+          a {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    main {
+      .main-text {
+        margin: 4% 6%;
+        h2 {
+          font-size: 2.4rem;
+          margin-bottom: 2vh;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 6vh;
+        }
+        .socials {
+          a {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+
+    .skills {
+      margin: 15vh 15% 0 15%;
+      .skills-intro {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+
+      .skills-cards {
+        img {
+          width: 65px;
+          height: 65px;
+        }
+        h3 {
           font-size: 1.3rem;
         }
       }
     }
-  }
 
-  main {
-    .main-text {
-      margin: 4% 6%;
-      h2 {
-        font-size: 2.4rem;
-        margin-bottom: 2vh;
-      }
-      p {
-        font-size: 1.2rem;
-        margin-bottom: 6vh;
-      }
-      .socials {
-        a {
-          font-size: 40px;
+    .portfolio {
+      .portfolio-intro {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.4rem;
         }
       }
-    }
-  }
-
-  .skills {
-    margin: 15vh 15% 0 15%;
-    .skills-intro {
-      h2 {
-        font-size: 2.4rem;
-      }
-      p {
-      font-size: 1.4rem;
-      }
-    }
-
-    .skills-cards {
-      img {
-        width: 65px;
-        height: 65px;
-      }
-      h3 {
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  .portfolio {
-    .portfolio-intro {
-      h2 {
-        font-size: 2.4rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-    .portfolio-card-deck {
-      .portfolio-card {
-        .portfolio-card-text {
-          h5 {
-            font-size: 1.4rem;
-          }
-          p {
-            font-size: 1rem;
-          }
-          a {
-            font-size: 40px;
+      .portfolio-card-deck {
+        .portfolio-card {
+          .portfolio-card-text {
+            h5 {
+              font-size: 1.4rem;
+            }
             p {
-              font-size: 1.5rem;
+              font-size: 1rem;
+            }
+            a {
+              font-size: 40px;
+              p {
+                font-size: 1.5rem;
+              }
             }
           }
         }
       }
     }
-  }
 
-  footer {
-    .socials {
-      a {
-        font-size: 40px;
+    footer {
+      .socials {
+        a {
+          font-size: 40px;
+        }
       }
     }
   }
